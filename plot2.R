@@ -4,7 +4,7 @@ unzip("household_power_consumption.zip")
 library(dplyr)
 data<-read.table("household_power_consumption.txt",header=TRUE,nrows=70000,sep=";", na.strings="?")
 
-##Convert the Date variable to Date classes in R.
+##Convert the Date variable to Date classes in R
 data$Date<-as.Date(data$Date,"%d/%m/%Y")
 
 ##Select two days
